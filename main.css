@@ -1,0 +1,34 @@
+body, html {
+    background:black; 
+    font-family: 'Courier New', Courier, monospace;
+    color: #555;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden
+}
+video {
+    width: 100%; 
+    height: 100%;
+    z-index: 5; 
+}
+video:focus {
+    outline: none;
+}
+body {
+    display: flex;
+}
+.drag {
+    background: #222;
+}
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+}
+.placeholder::after {
+    position: absolute;
+    font-weight: bold;
+    content: 'Drop a video'
+}
